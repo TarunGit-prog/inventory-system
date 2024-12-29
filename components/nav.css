@@ -1,0 +1,46 @@
+/* styles.css or Nav.css */
+
+/* Existing navbar styles */
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Padding around the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .navbar-list {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar-item {
+    margin: 0 15px; /* Space between items */
+  }
+  
+  .navbar-link {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 15px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .navbar-link:hover {
+    background-color: #575757; /* Darker background on hover */
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-list {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .navbar-item {
+      margin: 5px 0; /* Space between items in vertical layout */
+    }
+  }
